@@ -15,8 +15,45 @@
             <link rel="stylesheet" href="css/grid.css" type="text/css" media="all" />
             <link rel="stylesheet" href="css/blocks.css" type="text/css" media="all" />
                 <script src="js/jquery1.js"></script>
+				
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110957712-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-                
+  gtag('config', 'UA-110957712-1');
+</script>
+
+<!-- Global site tag (gtag.js) - Google AdWords: 824626902 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-824626902"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-824626902');
+</script>
+         
+<!-- Event snippet for Lead-ButtonClick conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-824626902/2nyJCKvZqXoQ1p2biQM',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+       
             </head>
         <body  class="t-body" style="margin:0;" >
 		
@@ -44,7 +81,7 @@
                                                 </div>
                                             </div>
                                       <div class="t182__buttons">
-                                                <a href="https://www.lyft.com/invite/FABLE" target="" class="t-btn" style="color:#ffffff;background-color:#fc009b;border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;">
+                                                <a href="https://www.lyft.com/invite/FABLE" target="" class="t-btn" style="color:#ffffff;background-color:#fc009b;border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; onclick="return gtag_report_conversion('https://www.lyft.com/invite/FABLE');">
                                                     <table style="width:100%; height:100%;">
                                                         <tr>
                                                             <td>
@@ -134,7 +171,7 @@
             <div class="t-container_100">
                 <div class="t142__wrapone">
                     <div class="t142__wraptwo">
-                        <a href="https://www.lyft.com/invite/FABLE" target="">
+                        <a href="https://www.lyft.com/invite/FABLE" target="" onclick="return gtag_report_conversion('https://www.lyft.com/invite/FABLE');">
                             <div class="t-btn t142__submit " style="color:#fcf9f9;border:0px solid #000000;background-color:#fc009b;border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;">
                                 Get My $50 Code
                             </div>
